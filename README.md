@@ -1,5 +1,5 @@
 # MIE1626 Data Science Methods and Statistical Learning
-# Text and Sentiment Analysis for Canadian Election Data
+# Project of Text and Sentiment Analysis for Canadian Election Data
 
 Python Data Science Package
 Numpy:

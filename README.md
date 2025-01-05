@@ -1,24 +1,25 @@
 # MIE1626 Data Science Methods and Statistical Learning
 # Project of Text and Sentiment Analysis for Canadian Election Data
 
-Python Data Science Package
-Numpy:
-Pandas:
-Seaborn:
-Sklearn:
--	sklearn.feature_extraction.text: CountVectorizer, TfidfVectorizer
--	sklearn.decomposition: TruncatedSVD
--	sklearn.model_selection; train_test_split
-Matplotlib:
-wordcloud: Wordcloud
+--- Python Data Science Package
+Numpy;  
+Pandas;  
+Seaborn;
+Matplotlib;  
+wordcloud: Wordcloud  
 collections: defaultdict
-gensim.models: Word2Vec
-transformers: BertTokenizer, BertModel
+gensim.models: Word2Vec  
+transformers: BertTokenizer, BertModel  
+Sklearn:
+  -	sklearn.feature_extraction.text: CountVectorizer, TfidfVectorizer
+  -	sklearn.decomposition: TruncatedSVD
+  -	sklearn.model_selection; train_test_split  
+  
 
-Python Data Cleaning Package
-Re: re.complie (compile a regular expression pattern into regular)
-Html: html.unescape (Strip HTML)
-nltk: 
+--- Python Data Cleaning Package  
+Re: re.complie (compile a regular expression pattern into regular)  
+Html: html.unescape (Strip HTML)  
+nltk:  
 -	nltk.tokenize: word_tokenize
 -	nltk.corpus: stopwords
 -	nltk.stem: PorterStemmer
@@ -26,14 +27,14 @@ nltk:
 Part 1 – Data Cleaning
 -	Import two datasets sentiment_analysis.csv & Canadian_elections_2021.csv
 -	Clean tweets data according to the following:
-	Remove emojis and special characters.
-	Remove html tags and attributes (i.e., /<[^>]+>/).
-	Html character codes (i.e., &...;) are replaced with an ASCII equivalent.
-	All URLs are removed.
-	Lowercase text.
-	All stop words are removed. (stop = stopwords.words('english'))
-	If a tweet is empty after pre-processing being preserved.
--	Tokenize the sentences and join the tokens back to strings for next steps’ analysis.
+  - Remove emojis and special characters.
+  - Remove html tags and attributes (i.e., /<[^>]+>/).
+  -	Html character codes (i.e., &...;) are replaced with an ASCII equivalent.
+  -	All URLs are removed.
+  - Lowercase text.
+  -	All stop words are removed. (stop = stopwords.words('English))
+  -	Preserve if a tweet is empty after pre-processing.
+- Tokenize the sentences and join the tokens back to strings for next steps’ analysis.
 
 Part 2 – EDA
 -	Design a simple procedure that determines the political party according to the chosen related words being observed from the given data.
